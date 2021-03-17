@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб студия</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <!--Шапка сайта-->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="./index.html" class="logo link"><span class="logo-interactive">Web</span>Studio</a>
+            
+                <ul class="site-nav list">
+                    <li><a href="./index.html" class="nav-link current link">Студия</a></li>
+                    <li><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
+                    <li><a href="#" class="nav-link link">Контакты</a></li>
+                </ul>
+            </nav>
+            <address>
+                <ul class="top-connection list">
+                    <li><a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="contacts link">+38 096 111 1111</a></li>
+                </ul>
+            </address>
+        </div>
+    </header>
+
+    <!--Контент сайта студия-->
+    <main>
+
+            <!--Секция решения для вашего бизнеса с кнопкой "заказать услуги"-->
+            <section class="section hero">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="hero-button">Заказать услугу</button>
+            </section>  
+            
+            <!--Секция о нас-->
+            <section class="section about-us-section ">
+                <!--Заголовок в дальнейшом спрятать в css-->
+                <h2 class="visually-hidden">Наши положительные стороны</h2>
+                <ul class="about-us-text list">
+                    <li>
+                        <h3 class="about-us-title">Внимание к деталям</h3>
+                        <p> Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li>
+                        <h3 class="about-us-title">Пунктуальность</h3>
+                        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li>
+                        <h3 class="about-us-title">Планирование</h3>
+                        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li>
+                        <h3 class="about-us-title">Современные технологии</h3>
+                        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li> 
+                </ul>
+            </section>
+            
+            <!--Cекция наши работы-->
+            <section class="section our-works">
+                <h2 class="title">Чем мы занимаемся</h2>
+                <ul class="list">
+                    <li>
+                        <img src="./images/box1.jpg" alt="Фото планшета на столе" width="370">
+                    </li> 
+
+                    <li> 
+                        <img src="./images/box2.jpg" alt="Девушка с телефоном" width="370">
+                    </li>
+
+                    <li> 
+                        <img src="./images/box3.jpg" alt="Мужчина с планшетом в руках" width="370">
+                    </li>
+                </ul>
+            </section>
+
+            <!--Секция наша команда-->
+            <section class="section our-team">
+                <h2 class="title">Наша команда</h2>
+                <ul class="team-specialty list">
+                    <li>
+                        <img src="./images/photomen1.jpg" alt="Игорь Демьяненко" width="270">
+                        <h3 class="our-team-title">Игорь Демьяненко</h3>
+                        <p lang="en">Product Designer</p>
+                    </li>
+                    <li>
+                        <img src="./images/photowomen.jpg" alt="Ольга Репина" width="270">
+                        <h3 class="our-team-title">Ольга Репина</h3>
+                        <p lang="en">Frontend Developer</p>
+                    </li>
+                    <li>
+                        <img src="./images/photomen2.jpg" alt="Николай Тарасов" width="270">
+                        <h3 class="our-team-title">Николай Тарасов</h3>
+                        <p lang="en">Marketing</p>
+                    </li>
+                    <li>
+                        <img src="./images/photomen3.jpg" alt="Михаил Ермаков" width="270">
+                        <h3 class="our-team-title">Михаил Ермаков</h3>
+                        <p lang="en">UI Designer</p>
+                    </li>
+                </ul>
+
+            </section>
+    </main>
+
+    <!--Подвал сайта, иноформация адресов-->
+    <footer>
+        <div class="bottom-link">
+            <a href="./index.html" class="logo link"><span class="logo-interactive">Web</span><span class="studio-white">Studio</span></a>
+            <address>
+                    <ul class="list"> 
+                        <li><a class="maps link" href="https://goo.gl/maps/kpo2gFMixc3sEq3g6" rel="noopener noreferrer nofollow" 
+                            target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li><a class="mail link" href="mailto:info@example.com">info@example.com</a></li>
+                        <li><a class="tel link" href="tel:+380991111111">+38 099 111 1111</a></li>
+                    </ul>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>

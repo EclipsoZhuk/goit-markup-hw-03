@@ -1,0 +1,278 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста  #757575 */
+/* черный #000000  */
+/* белый #FFFFFF  */
+/* акцент #2196F3 */
+/* цвет навигации в footer rgba(255, 255, 255, 0.6); */
+/* цвет основного фона #E5E5E5 */
+/* вторичный цвет фона #F5F4FA*/
+
+/* Задаем переменные цветов нашего сайта */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --secondary-background-color: #f5f4fa;
+  --cursor-button: pointer;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* Утилиты */
+/* 1. Изменение в ссылках */
+.link {
+  color: inherit;
+
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* 2. Точки и отступы в списках ul */
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* 3. Убирает заголовки */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* 4. Сброс h1-h6, ul, p */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-top: 0;
+}
+
+/* 5. Контейнер */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* 6. Отступы секций */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Logo */
+.logo {
+  color: #000000;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.logo-interactive {
+  color: var(--accent-color);
+}
+
+/* Site nav */
+.nav-link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-link.current {
+  color: var(--accent-color);
+}
+
+/* Верхнии контакты */
+.top-connection .contacts,
+.top-connection .contacts {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.top-connection .contacts:hover,
+.top-connection .contacts:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  color: #ffffff;
+  background-color: #2196f3;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: var(--cursor-button);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+/* О нас */
+.about-us-section .about-us-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.about-us-text p {
+  color: var(--secondary-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Загловки h2 в веб-студия */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+.our-team {
+  background: var(--secondary-background-color);
+}
+.our-team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+.team-specialty p {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+/* Нижнии контакты */
+.bottom-link {
+  background-color: #2f303a;
+}
+.bottom-link .maps {
+  color: #ffffff;
+}
+.bottom-link .mail,
+.bottom-link .tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+.bottom-link .maps,
+.mail,
+.tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.maps:hover,
+.mail:hover,
+.tel:hover,
+.maps:focus,
+.mail:focus,
+.tel:focus {
+  color: var(--accent-color);
+}
+
+/* Сайт портфолио */
+
+/* Список фильтров */
+.filter-menu .button-menu {
+  background: #f5f4fa;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: var(--cursor-button);
+}
+.button-menu:hover,
+.button-menu:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+/* Наши проекты */
+.projects a {
+  color: var(--primary-text-color);
+}
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.projects p {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+.studio-white {
+  color: #ffffff;
+}
+.studio-white:hover,
+.studio-white:focus {
+  color: var(--accent-color);
+}
